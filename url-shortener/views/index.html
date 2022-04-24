@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url-Shortener</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article>
+        <h1>URL-SHORTENER</h1>
+        <h3>Description</h3>
+        <div class="text">
+            Get you short url
+        </div>
+    </article>
+    <main>
+        <div class="input">
+            <h3>Inputs</h3>
+            <li><a>Example: POST [project_url]/api/shorturl - https://www.google.com</a></li>
+        </div>
+        <div class="input">
+            <h3>Ouput</h3>
+            <div class="text">
+                Short url to navigate.
+            </div>
+        </div>
+        <div>
+            <form action="/api/shorturl" method="POST">
+                <fieldset>
+                    <label for="url">Insert Url</label>
+                    <input type="text" id="url_input" name="url" placeholder="google.com" required>
+                    <input type="submit" value="POST URL">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            By: Carlos Enrique Juarez
+        </p>
+        <a href="https://github.com/carlosjuarez-s/backend-development-freecodecamp">Repository</a>
+    </footer>
+</body>
+</html>
